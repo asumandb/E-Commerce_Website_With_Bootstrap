@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAYA</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg  mt-4">
+    <a class="navbar-brand ms-5 fs-3 fw-semibold" href="index.html">MAYA</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="col-4" style="margin-left: 25%;">
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Ara" aria-label="Search">
+        <button class="btn btn-dark" type="submit"><i class="fa-solid fa-magnifying-glass "></i></button>
+      </form>
+    </div>
+
+    <div class="collapse navbar-collapse mx-5 justify-content-end " id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="sepet.html"><i class="fa-solid fa-basket-shopping fa-xl"></i></a>
+        </li>
+        <li class="nav-item ms-4">
+          <a class="nav-link" href="login.html"><i class="fa-solid fa-user fa-xl"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="h-100">
+    <div class="container h-100 py-5">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-10">
+  
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h3 class="fw-normal mb-0">Sepetim</h3>
+            <div>
+              <p class="mb-0"><span class="text-muted">Sıralama</span> <a href="#!" class="text-body text-decoration-none">Fiyata Göre Artan<i
+                    class="fas fa-angle-down mt-1"></i></a></p>
+            </div>
+          </div>
+  
+          <div class="card rounded-3 mb-4">
+            <div class="card-body p-4">
+              <div class="row d-flex justify-content-between align-items-center">
+                <div class="col-md-2 col-lg-2 col-xl-2">
+                  <img
+                    src="images/esarp.jpeg"
+                    class="img-fluid rounded-3" alt="">
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3">
+                  <p class="lead fw-normal mb-2">İpek Eşarp</p>
+                  <p><span class="text-muted">Renk: </span>Yeşil</p>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                  <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link-body-emphasispx-2"
+                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                    <i class="fas fa-minus"></i>
+                  </button>
+  
+                  <input id="form1" min="0" name="quantity" value="2" type="number"
+                    class="form-control form-control-sm" />
+  
+                  <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link-body-emphasis px-2"
+                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                  <h5 class="mb-0">700TL</h5>
+                </div>
+                <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                  <a href="#!" class="btn btn-dark text-white"><i class="fas fa-trash fa-lg"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="card rounded-3 mb-4">
+            <div class="card-body p-4">
+              <div class="row d-flex justify-content-between align-items-center">
+                <div class="col-md-2 col-lg-2 col-xl-2">
+                  <img
+                    src="images/kolye.jpeg"
+                    class="img-fluid rounded-3" alt="Kuvars Kolye">
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3">
+                  <p class="lead fw-normal mb-2">Kuvars Kolye</p>
+                  <p><span class="text-muted">Renk:</span>Kahverengi</p>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                  <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link-body-emphasis px-2"
+                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                    <i class="fas fa-minus"></i>
+                  </button>
+  
+                  <input id="form1" min="0" name="quantity" value="1" type="number"
+                    class="form-control form-control-sm" />
+  
+                  <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link-body-emphasis px-2"
+                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                  <h5 class="mb-0">2.500TL</h5>
+                </div>
+                <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                  <a href="#!" class="btn btn-dark text-white"><i class="fas fa-trash fa-lg"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="card rounded-3 mb-4">
+            <div class="card-body p-4">
+              <div class="row d-flex justify-content-between align-items-center">
+                <div class="col-md-2 col-lg-2 col-xl-2">
+                  <img
+                    src="images/ayakkabi.jpeg"
+                    class="img-fluid rounded-3" alt="Beyaz Ayakkabı">
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3">
+                  <p class="lead fw-normal mb-2">Spor Ayakkabı</p>
+                  <p><span class="text-muted">Numara: </span>40 <span class="text-muted">Renk: </span>Beyaz</p>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                  <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link-body-emphasis px-2"
+                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                    <i class="fas fa-minus"></i>
+                  </button>
+  
+                  <input id="form1" min="0" name="quantity" value="1" type="number"
+                    class="form-control form-control-sm" />
+  
+                  <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link-body-emphasis px-2"
+                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                  <h5 class="mb-0">2.750TL</h5>
+                </div>
+                <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                  <a href="#!" class="btn btn-dark text-white"><i class="fas fa-trash fa-lg"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="card rounded-3 mb-4">
+            <div class="card-body p-4">
+              <div class="row d-flex justify-content-between align-items-center">
+                <div class="col-md-2 col-lg-2 col-xl-2">
+                  <img
+                    src="images/telefon.jpeg"
+                    class="img-fluid rounded-3" alt="Akıllı Telefon">
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3">
+                  <p class="lead fw-normal mb-2">Akıllı Telefon</p>
+                  <p><span class="text-muted">Renk:</span>Titanyum</p>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                  <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link-body-emphasis px-2"
+                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                    <i class="fas fa-minus"></i>
+                  </button>
+  
+                  <input id="form1" min="0" name="quantity" value="1" type="number"
+                    class="form-control form-control-sm" />
+  
+                  <button data-mdb-button-init data-mdb-ripple-init class="btn btn-link-body-emphasis px-2"
+                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                  <h5 class="mb-0">80.000TL</h5>
+                </div>
+                <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                  <a href="#!" class="btn btn-dark text-white"><i class="fas fa-trash fa-lg"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="card mb-4">
+            <div class="card-body p-4 d-flex flex-row">
+              <div data-mdb-input-init class="form-outline flex-fill">
+                <input type="text" id="form1" class="form-control form-control-lg" placeholder="İndirim Kodunu Giriniz"/>
+              </div>
+              <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-dark text-white btn-lg ms-3">Uygula</button>
+            </div>
+          </div>
+  
+          <div class="card">
+            <div class="card-body">
+              <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn btn-dark text-white btn-lg">Ödemeye Geç</button>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer bg-dark text-white text-center py-5 mt-5" style="width: 100%; display: flexbox;">
+    <p>
+      &copy; 2025 MAYA. Tüm hakları saklıdır.
+    </p>
+    <p>
+      Maya, sektördeki liderliğini müşteri memnuniyeti, kaliteli ürünler ve yenilikçi hizmet anlayışıyla
+      sürdürmektedir.
+      2025 yılı itibariyle, faaliyetlerimize hız kesmeden devam ediyoruz ve her geçen gün daha fazla
+      müşterimize
+      ulaşmayı hedefliyoruz.
+      Güçlü müşteri ilişkileri, zamanında teslimat ve güvenilir hizmet anlayışımız ile sektördeki en iyi
+      markalardan
+      biri olmayı
+      başardık. Her türlü sorunuz için bizimle iletişime geçebilirsiniz. Ekibimiz her zaman yanınızdadır.
+    </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
